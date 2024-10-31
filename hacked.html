@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Touched By? TNoname & Aexdy</title>
+    <link rel="shortcut icon">
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            color: #fff;
+        }
+
+        h1, h2, h3 {
+            font-family: Courier, monospace;
+        }
+    </style>
+    <style>
+        body {
+            background-image: url("https://aisal.mentine.work/wp-content/plugins/bril.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+		
+		.hidden-audio {
+            display: none;
+        }
+        
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .contact img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .music-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false" onload="showAlert()" scroll="no" style="overflow: hidden" ondragstart="window.event.returnValue=false" onselectstart="event.returnValue=false">
+<body>
+    <center>
+        <h2>Touched By? TNoname & Aexdy</h2>
+        <h4>Leviathan Perfect Hunter</h4>
+        <audio id="myAudio" class="hidden-audio">
+            <source src="https://dl.sndup.net/yccgr/Waduh.mp3" type="audio/mp3">
+        </audio>
+        
+        <button class="music-button" onclick="playAudio()">Play Audio</button>
+        
+        <div class="contact">
+            <a href="https://twitter.com/DJDinarCandy" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/256/2168/2168336.png" alt="Twitter Logo">
+            </a>
+            <a href="https://t.me/haxorkontollo" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/256/2175/2175366.png" alt="Telegram Logo">
+            </a>
+        </div>
+    </center>
+    
+    <script>
+        var audio = document.getElementById("myAudio");
+        
+        function playAudio() {
+            audio.play();
+        }
+    </script>
+</body>
+
+</html>
