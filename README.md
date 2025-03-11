@@ -8,4 +8,3 @@ crontab -r && systemctl restart apache2
 
 kill -KILL 1223
 
-bash auto-upload.sh
