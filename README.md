@@ -8,3 +8,4 @@ crontab -r && systemctl restart apache2
 
 kill -KILL 1223
 
+main sh/bash
