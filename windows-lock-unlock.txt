@@ -1,0 +1,21 @@
+Locked Perintah icals :
+Step 1 : 
+icacls "C:\\xampp\\htdocs\\opmasal\\apps" /inheritance:r /T
+
+Step 2 :
+icacls "C:\\xampp\\htdocs\\opmasal\\apps" /grant:r Everyone:(RX) /T
+
+Step 3 :
+icacls "C:\\xampp\\htdocs\\opmasal\\apps" /deny Everyone:(DE) /T
+
+Unlocked Perintah icals :
+Step 1: Hapus deny permission
+icacls "C:\xampp\htdocs\opmasal\apps" /remove:d Everyone /T
+
+Step 2: Hapus izin grant RX untuk Everyone
+icacls "C:\xampp\htdocs\opmasal\apps" /remove:g Everyone /T
+
+Step 3: Aktifkan kembali inheritance (pewarisan izin dari folder induk)
+icacls "C:\xampp\htdocs\opmasal\apps" /inheritance:e /T
+
+NOTED: slash harus miring contoh slash double \\
