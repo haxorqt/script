@@ -19,3 +19,15 @@ Step 3: Aktifkan kembali inheritance (pewarisan izin dari folder induk)
 icacls "C:\xampp\htdocs\opmasal\apps" /inheritance:e /T
 
 NOTED: slash harus miring contoh slash double \\
+
+==================================================
+RESET SEMUA PERINTAH :
+
+STEP 1
+takeown /F "E:\WWW\simbara" /R /D Y
+
+STEP 2
+icacls "E:\WWW\simbara" /grant %username%:F /T
+
+STEP 3
+icacls "E:\WWW\simbara" /reset /T
